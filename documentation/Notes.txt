@@ -5,5 +5,24 @@ https://github.com/ggeorgelewis/help-portal
 
 sudo docker run -dit --name my-running-app -p 8080:80 my-apache2 
 
-sudo docker build --build-arg GITHUB_TOKEN=d9f3db194d6f3fbca5eb89bcc8db747888dad019 --build-arg GITHUB_USERNAME=jahtoe --build-arg GITHUB_EMAIL=alex@tech.jahtoe.com -t build-help-site  .
+sudo docker build --build-arg GITHUB_TOKEN=1c821ac9c310b0646086ece8eb23a064b622f2d2 --build-arg GITHUB_USERNAME=jahtoe --build-arg GITHUB_EMAIL=alex@tech.jahtoe.com -t build-help-site  .
 
+git clone --depth=1  https://1c821ac9c310b0646086ece8eb23a064b622f2d2@github.com/ggeorgelewis/help-portal.git
+
+
+
+
+git remote add origin https://scuzzlebuzzle:<MYTOKEN>@github.com/ggeorgelewis/help-portal.git
+cd ..
+cd cd 
+
+#sudo  docker ps -a
+#sudo docker rm 420bf2baab82
+#sudo docker run -dit --name running-help-site -p 8080:80 help-site
+#sudo docker exec -it help-site bash
+
+git config --global user.email "alex@tech.jahtoe.com"
+git config --global user.name "jahtoe"
+
+
+git clone https://d9f3db194d6f3fbca5eb89bcc8db747888dad019@github.com/ggeorgelewis/help-portal.git /static-output/

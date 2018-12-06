@@ -39,7 +39,7 @@ WORKDIR /build/
 RUN bundle install
 RUN bundle exec jekyll build
 
-RUN git clone https://${GITHUB_TOKEN}@github.com/ggeorgelewis/help-portal /static-output/
+RUN git clone https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/ggeorgelewis/help-portal.git /static-output/
 RUN rm -rf /static-output/*.*
 RUN cp -rf _site/* /static-output/
 
