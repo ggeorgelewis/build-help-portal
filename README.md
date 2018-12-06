@@ -1,6 +1,6 @@
 # build-help-portal
 
-* The dockerfile in md2html/ pulls the markdown from content-help-site content and pushes the html to help-site
+* The dockerfile in md2html/ pulls the markdown from the content-help-site git repo and pushes the generated html to help-site git repo
 
 * The dockerfile in apache/ creates a container with the help-site content pulled from git to enable the website to be accessible at port localhost:8080
 
