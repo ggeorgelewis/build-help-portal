@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="18.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="oxygenProjectFile.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="oxygenProjectFile.xpr">
+        <folder path="../"/>
+        <folder path="."/>
+        <folder path="../../temp/"/>
+    </projectTree>
+</project>

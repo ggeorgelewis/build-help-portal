@@ -1,0 +1,9 @@
+https://github.com/ggeorgelewis/build-help-portal.git
+https://github.com/ggeorgelewis/content-help-portal.git
+https://github.com/ggeorgelewis/help-portal
+
+
+sudo docker run -dit --name my-running-app -p 8080:80 my-apache2 
+
+sudo docker build --build-arg GITHUB_TOKEN=d9f3db194d6f3fbca5eb89bcc8db747888dad019 --build-arg GITHUB_USERNAME=jahtoe --build-arg GITHUB_EMAIL=alex@tech.jahtoe.com -t build-help-site  .
+

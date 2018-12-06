@@ -1,0 +1,16 @@
+FROM httpd:latest
+
+WORKDIR /usr/local/apache2/htdocs/
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG GITHUB_TOKEN
+ARG GITHUB_USERNAME
+ARG GITHUB_EMAIL
+
+RUN apt-get update && apt-get install -y git
+RUN git config --global user.email "${GITHUB_EMAIL}"
+RUN git config --global user.name "${GITHUB_USERNAME}"
+RUN git clone --depth=1  https://${GITHUB_TOKEN}@github.com/ggeorgelewis/help-portal.git
+RUN mv static-output/* /usr/local/apache2/htdocs/
+RUN rm -r static-output/
+
